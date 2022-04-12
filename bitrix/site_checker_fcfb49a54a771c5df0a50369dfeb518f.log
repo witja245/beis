@@ -1,0 +1,304 @@
+2022-Mar-29 11:28:51 Наличие необходимых модулей php (check_php_modules): Ok
+Все необходимые модули установлены
+2022-Mar-29 11:28:51 Обязательные параметры PHP (check_php_settings): Ok
+Настройки правильные
+2022-Mar-29 11:28:51 Модули веб-сервера (check_security): Ok
+Конфликтов не выявлено
+2022-Mar-29 11:28:51 Значения переменных сервера (check_server_vars): Ok
+Корректные
+2022-Mar-29 11:28:51 Сохранение сессии (check_session): Ok
+50% done
+2022-Mar-29 11:28:51 Сохранение сессии (check_session): Ok
+Успешно
+2022-Mar-29 11:28:51 Параметры настройки UTF (mbstring и константа BX_UTF) (check_mbstring): Ok
+Правильные. Сайт работает в UTF кодировке
+2022-Mar-29 11:28:51 Служебные скрипты в корне сайта (check_install_scripts): Ok
+Отсутствуют
+2022-Mar-29 11:28:51 Работа с сокетами (check_socket): Fail
+Connection to beis.loc:80	Fail
+Socket error [0]: php_network_getaddresses: getaddrinfo failed: Name or service not known
+
+Ошибка! Не работает
+2022-Mar-29 11:28:51 Выполнение агентов на cron (check_bx_crontab): Fail
+Ошибка! Не настроен запуск cron_events.php на cron, последний агент отработал больше суток назад.
+2022-Mar-29 11:28:51 Параметры подключения к базе данных (check_dbconn_settings): Ok
+Успешно
+2022-Mar-29 11:28:51 Лишний вывод в файлах конфигурации (check_dbconn): Warning
+Замечание. Не удалось проверить из-за ошибки в работе с сокетами
+2022-Mar-29 11:28:51 Сохранение сессии без UserAgent (check_session_ua): Warning
+Замечание. Не удалось проверить из-за ошибки в работе с сокетами
+2022-Mar-29 11:28:51 Настройки сайтов (check_sites): Ok
+Правильные
+2022-Mar-29 11:28:51 Передача объектов по ссылке (check_clone): Ok
+Успешно
+2022-Mar-29 11:28:51 Размер стека и pcre.recursion_limit (check_pcre_recursion): Warning
+Замечание. Не удалось проверить из-за ошибки в работе с сокетами
+2022-Mar-29 11:28:51 Загрузка файла (check_upload): Warning
+Замечание. Не удалось проверить из-за ошибки в работе с сокетами
+2022-Mar-29 11:28:51 Загрузка файла больше 4Мб (check_upload_big): Warning
+Замечание. Не удалось проверить из-за ошибки в работе с сокетами
+2022-Mar-29 11:28:52 Загрузка файла через php://input (check_upload_raw): Warning
+Замечание. Не удалось проверить из-за ошибки в работе с сокетами
+2022-Mar-29 11:28:52 Передача POST запроса с большим числом параметров (check_post): Warning
+Замечание. Не удалось проверить из-за ошибки в работе с сокетами
+2022-Mar-29 11:28:52 Отправка почты (check_mail): Ok
+Успешно
+2022-Mar-29 11:28:52 Отправка почтового сообщения больше 64Кб (check_mail_big): Ok
+Успешно
+2022-Mar-29 11:28:52 Проверка на наличие неотправленных сообщений (check_mail_b_event): Fail
+Ошибка! Есть ошибки при отправке системных почтовых сообщений, число неотправленных сообщений: 7 Определена константа BX_CRONTAB_SUPPORT в /bitrix/php_interface/dbconn.php, при этом должен быть настроен вызов агентов на cron.
+2022-Mar-29 11:28:52 Внутреннее перенаправление (функция LocalRedirect) (check_localredirect): Warning
+Замечание. Не удалось проверить из-за ошибки в работе с сокетами
+2022-Mar-29 11:28:52 Фактическое ограничение памяти (check_memory_limit): Warning
+Замечание. Не удалось проверить из-за ошибки в работе с сокетами
+2022-Mar-29 11:28:52 Работа с файлами кеша (check_cache): Ok
+Успешно
+2022-Mar-29 11:28:52 Доступ к серверу обновлений (check_update): Ok
+Успешно
+2022-Mar-29 11:28:52 HTTP авторизация (check_http_auth): Warning
+Замечание. Не удалось проверить из-за ошибки в работе с сокетами
+2022-Mar-29 11:28:52 Создание и запуск файла (check_exec): Warning
+Замечание. Не удалось проверить из-за ошибки в работе с сокетами
+2022-Mar-29 11:28:52 Функция getimagesize для swf (check_getimagesize): Ok
+Успешно
+2022-Mar-29 11:28:52 Версия MySQL-сервера (check_mysql_bug_version): Ok
+Успешно
+2022-Mar-29 11:28:53 Время на БД и веб-сервере (check_mysql_time): Ok
+Успешно
+2022-Mar-29 11:28:53 Режим работы MySQL (check_mysql_mode): Ok
+Успешно
+2022-Mar-29 11:28:53 Кодировка соединения (check_mysql_connection_charset): Ok
+character_set_connection=utf8, collation_connection=utf8_unicode_ci, character_set_results=utf8
+Успешно
+2022-Mar-29 11:28:53 Кодировка базы данных (check_mysql_db_charset): Ok
+CHARSET=utf8, COLLATION=utf8_unicode_ci
+Успешно
+2022-Mar-29 11:28:53 Кодировки таблиц в БД (check_mysql_table_charset): Ok
+Успешно
+2022-Mar-29 11:28:53 Структура базы данных (check_mysql_table_structure): Ok
+0% done
+2022-Mar-29 11:28:53 Структура базы данных (check_mysql_table_structure): Ok
+2% done
+2022-Mar-29 11:28:53 Структура базы данных (check_mysql_table_structure): Ok
+4% done
+2022-Mar-29 11:28:54 Структура базы данных (check_mysql_table_structure): Ok
+6% done
+2022-Mar-29 11:28:54 Структура базы данных (check_mysql_table_structure): Ok
+8% done
+2022-Mar-29 11:28:54 Структура базы данных (check_mysql_table_structure): Ok
+10% done
+В таблице b_clouds_file_upload поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+В таблице b_clouds_file_resize поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+В таблице b_clouds_copy_queue поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+В таблице b_clouds_delete_queue поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+В таблице b_clouds_file_save поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+
+2022-Mar-29 11:28:54 Структура базы данных (check_mysql_table_structure): Ok
+12% done
+2022-Mar-29 11:28:54 Структура базы данных (check_mysql_table_structure): Ok
+14% done
+2022-Mar-29 11:28:54 Структура базы данных (check_mysql_table_structure): Ok
+16% done
+2022-Mar-29 11:28:54 Структура базы данных (check_mysql_table_structure): Ok
+18% done
+В таблице b_file_search поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+
+2022-Mar-29 11:28:54 Структура базы данных (check_mysql_table_structure): Ok
+20% done
+2022-Mar-29 11:28:54 Структура базы данных (check_mysql_table_structure): Ok
+22% done
+2022-Mar-29 11:28:56 Структура базы данных (check_mysql_table_structure): Ok
+24% done
+В таблице b_sale_auxiliary поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+В таблице b_sale_user_account поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+В таблице b_sale_recurring поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+В таблице b_sale_user_cards поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+В таблице b_sale_user_transact поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+В таблице b_sale_affiliate_plan поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+В таблице b_sale_affiliate поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+В таблице b_sale_affiliate_transact поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+В таблице b_sale_delivery_req поле DATE "`DATE` timestamp NOT NULL DEFAULT current_timestamp()" не соответствует описанию на диске "`DATE` timestamp NULL DEFAULT current_timestamp()"
+В таблице b_sale_b24integration_stat_provider поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+
+2022-Mar-29 11:28:56 Структура базы данных (check_mysql_table_structure): Ok
+26% done
+2022-Mar-29 11:28:56 Структура базы данных (check_mysql_table_structure): Ok
+28% done
+2022-Mar-29 11:28:57 Структура базы данных (check_mysql_table_structure): Ok
+30% done
+В таблице b_catalog_store поле DATE_MODIFY "`DATE_MODIFY` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`DATE_MODIFY` timestamp NULL DEFAULT current_timestamp() on update current_timestamp()"
+В таблице b_catalog_contractor поле DATE_MODIFY "`DATE_MODIFY` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`DATE_MODIFY` timestamp NULL DEFAULT current_timestamp() on update current_timestamp()"
+
+2022-Mar-29 11:28:57 Структура базы данных (check_mysql_table_structure): Ok
+32% done
+2022-Mar-29 11:28:57 Структура базы данных (check_mysql_table_structure): Ok
+34% done
+В таблице b_workflow_status поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NULL DEFAULT NULL"
+
+2022-Mar-29 11:28:57 Структура базы данных (check_mysql_table_structure): Ok
+36% done
+2022-Mar-29 11:28:58 Структура базы данных (check_mysql_table_structure): Ok
+38% done
+2022-Mar-29 11:28:58 Структура базы данных (check_mysql_table_structure): Ok
+40% done
+2022-Mar-29 11:28:58 Структура базы данных (check_mysql_table_structure): Ok
+42% done
+В таблице b_seo_sitemap поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NULL DEFAULT NULL"
+В таблице b_seo_adv_order поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+В таблице b_seo_adv_log поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+В таблице b_seo_adv_autolog поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+
+2022-Mar-29 11:28:58 Структура базы данных (check_mysql_table_structure): Ok
+44% done
+2022-Mar-29 11:28:58 Структура базы данных (check_mysql_table_structure): Ok
+46% done
+В таблице b_stat_guest поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NULL DEFAULT NULL"
+В таблице b_stop_list поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NULL DEFAULT NULL"
+
+2022-Mar-29 11:28:59 Структура базы данных (check_mysql_table_structure): Ok
+48% done
+2022-Mar-29 11:28:59 Структура базы данных (check_mysql_table_structure): Ok
+51% done
+2022-Mar-29 11:28:59 Структура базы данных (check_mysql_table_structure): Ok
+53% done
+2022-Mar-29 11:28:59 Структура базы данных (check_mysql_table_structure): Ok
+55% done
+2022-Mar-29 11:29:00 Структура базы данных (check_mysql_table_structure): Ok
+57% done
+2022-Mar-29 11:29:00 Структура базы данных (check_mysql_table_structure): Ok
+59% done
+2022-Mar-29 11:29:00 Структура базы данных (check_mysql_table_structure): Ok
+61% done
+2022-Mar-29 11:29:00 Структура базы данных (check_mysql_table_structure): Ok
+63% done
+В таблице b_forum_file поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+
+2022-Mar-29 11:29:00 Структура базы данных (check_mysql_table_structure): Ok
+65% done
+В таблице b_mail_mailbox поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NULL DEFAULT NULL"
+В таблице b_mail_filter поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NULL DEFAULT NULL"
+В таблице b_mail_message_uid поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NULL DEFAULT NULL"
+В таблице b_mail_spam_weight поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NULL DEFAULT NULL"
+
+2022-Mar-29 11:29:00 Структура базы данных (check_mysql_table_structure): Ok
+67% done
+2022-Mar-29 11:29:01 Структура базы данных (check_mysql_table_structure): Ok
+69% done
+2022-Mar-29 11:29:01 Структура базы данных (check_mysql_table_structure): Ok
+71% done
+2022-Mar-29 11:29:01 Структура базы данных (check_mysql_table_structure): Ok
+73% done
+В таблице b_landing поле DATE_MODIFY "`DATE_MODIFY` timestamp NOT NULL DEFAULT "0000-00-00 00:00:00"" не соответствует описанию на диске "`DATE_MODIFY` timestamp NOT NULL"
+В таблице b_landing_block поле DATE_MODIFY "`DATE_MODIFY` timestamp NOT NULL DEFAULT "0000-00-00 00:00:00"" не соответствует описанию на диске "`DATE_MODIFY` timestamp NOT NULL"
+В таблице b_landing_site поле DATE_MODIFY "`DATE_MODIFY` timestamp NOT NULL DEFAULT "0000-00-00 00:00:00"" не соответствует описанию на диске "`DATE_MODIFY` timestamp NOT NULL"
+В таблице b_landing_domain поле DATE_MODIFY "`DATE_MODIFY` timestamp NOT NULL DEFAULT "0000-00-00 00:00:00"" не соответствует описанию на диске "`DATE_MODIFY` timestamp NOT NULL"
+В таблице b_landing_template поле DATE_MODIFY "`DATE_MODIFY` timestamp NOT NULL DEFAULT "0000-00-00 00:00:00"" не соответствует описанию на диске "`DATE_MODIFY` timestamp NOT NULL"
+В таблице b_landing_repo поле DATE_MODIFY "`DATE_MODIFY` timestamp NOT NULL DEFAULT "0000-00-00 00:00:00"" не соответствует описанию на диске "`DATE_MODIFY` timestamp NOT NULL"
+В таблице b_landing_demo поле DATE_MODIFY "`DATE_MODIFY` timestamp NOT NULL DEFAULT "0000-00-00 00:00:00"" не соответствует описанию на диске "`DATE_MODIFY` timestamp NOT NULL"
+В таблице b_landing_placement поле DATE_MODIFY "`DATE_MODIFY` timestamp NOT NULL DEFAULT "0000-00-00 00:00:00"" не соответствует описанию на диске "`DATE_MODIFY` timestamp NOT NULL"
+В таблице b_landing_update_block поле DATE_MODIFY "`DATE_MODIFY` timestamp NOT NULL DEFAULT "0000-00-00 00:00:00"" не соответствует описанию на диске "`DATE_MODIFY` timestamp NOT NULL"
+В таблице b_landing_urlrewrite поле DATE_MODIFY "`DATE_MODIFY` timestamp NOT NULL DEFAULT "0000-00-00 00:00:00"" не соответствует описанию на диске "`DATE_MODIFY` timestamp NOT NULL"
+В таблице b_landing_filter_entity поле DATE_MODIFY "`DATE_MODIFY` timestamp NOT NULL DEFAULT "0000-00-00 00:00:00"" не соответствует описанию на диске "`DATE_MODIFY` timestamp NOT NULL"
+В таблице b_landing_chat поле DATE_MODIFY "`DATE_MODIFY` timestamp NOT NULL DEFAULT "0000-00-00 00:00:00"" не соответствует описанию на диске "`DATE_MODIFY` timestamp NOT NULL"
+В таблице b_landing_cookies_agreement поле DATE_MODIFY "`DATE_MODIFY` timestamp NOT NULL DEFAULT "0000-00-00 00:00:00"" не соответствует описанию на диске "`DATE_MODIFY` timestamp NOT NULL"
+В таблице b_landing_designer_repo поле DATE_MODIFY "`DATE_MODIFY` timestamp NOT NULL DEFAULT "0000-00-00 00:00:00"" не соответствует описанию на диске "`DATE_MODIFY` timestamp NOT NULL"
+
+2022-Mar-29 11:29:01 Структура базы данных (check_mysql_table_structure): Ok
+75% done
+2022-Mar-29 11:29:01 Структура базы данных (check_mysql_table_structure): Ok
+77% done
+2022-Mar-29 11:29:01 Структура базы данных (check_mysql_table_structure): Ok
+79% done
+2022-Mar-29 11:29:01 Структура базы данных (check_mysql_table_structure): Ok
+81% done
+2022-Mar-29 11:29:01 Структура базы данных (check_mysql_table_structure): Ok
+83% done
+2022-Mar-29 11:29:02 Структура базы данных (check_mysql_table_structure): Ok
+85% done
+В таблице b_perf_cluster поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NULL DEFAULT NULL"
+В таблице b_perf_history поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NULL DEFAULT NULL"
+
+2022-Mar-29 11:29:02 Структура базы данных (check_mysql_table_structure): Ok
+87% done
+В таблице b_sec_session поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+
+2022-Mar-29 11:29:02 Структура базы данных (check_mysql_table_structure): Ok
+89% done
+2022-Mar-29 11:29:02 Структура базы данных (check_mysql_table_structure): Ok
+91% done
+2022-Mar-29 11:29:02 Структура базы данных (check_mysql_table_structure): Ok
+93% done
+2022-Mar-29 11:29:02 Структура базы данных (check_mysql_table_structure): Ok
+95% done
+2022-Mar-29 11:29:03 Структура базы данных (check_mysql_table_structure): Ok
+97% done
+В таблице b_event_message поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NULL DEFAULT NULL"
+В таблице b_group поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NULL DEFAULT NULL"
+В таблице b_user поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NULL DEFAULT NULL"
+В таблице b_user_field_confirm поле DATE_CHANGE "`DATE_CHANGE` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`DATE_CHANGE` timestamp NULL DEFAULT NULL"
+В таблице b_module поле DATE_ACTIVE "`DATE_ACTIVE` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`DATE_ACTIVE` timestamp NULL DEFAULT NULL"
+В таблице b_module_to_module поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NULL DEFAULT NULL"
+В таблице b_file поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NULL DEFAULT NULL"
+В таблице b_event_log поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NULL DEFAULT NULL"
+В таблице b_user_hit_auth поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NULL DEFAULT NULL"
+В таблице b_user_session поле TIMESTAMP_X "`TIMESTAMP_X` timestamp NOT NULL DEFAULT current_timestamp() on update current_timestamp()" не соответствует описанию на диске "`TIMESTAMP_X` timestamp NOT NULL"
+
+2022-Mar-29 11:29:03 Структура базы данных (check_mysql_table_structure): Fail
+ALTER TABLE `b_clouds_file_upload` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_clouds_file_resize` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_clouds_copy_queue` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_clouds_delete_queue` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_clouds_file_save` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_file_search` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_sale_auxiliary` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_sale_user_account` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_sale_recurring` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_sale_user_cards` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_sale_user_transact` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_sale_affiliate_plan` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_sale_affiliate` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_sale_affiliate_transact` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_sale_delivery_req` CHANGE `DATE` `DATE` timestamp NULL DEFAULT current_timestamp();
+ALTER TABLE `b_sale_b24integration_stat_provider` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_catalog_store` CHANGE `DATE_MODIFY` `DATE_MODIFY` timestamp NULL DEFAULT current_timestamp() on update current_timestamp();
+ALTER TABLE `b_catalog_contractor` CHANGE `DATE_MODIFY` `DATE_MODIFY` timestamp NULL DEFAULT current_timestamp() on update current_timestamp();
+ALTER TABLE `b_workflow_status` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NULL DEFAULT NULL;
+ALTER TABLE `b_seo_sitemap` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NULL DEFAULT NULL;
+ALTER TABLE `b_seo_adv_order` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_seo_adv_log` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_seo_adv_autolog` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_stat_guest` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NULL DEFAULT NULL;
+ALTER TABLE `b_stop_list` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NULL DEFAULT NULL;
+ALTER TABLE `b_forum_file` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_mail_mailbox` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NULL DEFAULT NULL;
+ALTER TABLE `b_mail_filter` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NULL DEFAULT NULL;
+ALTER TABLE `b_mail_message_uid` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NULL DEFAULT NULL;
+ALTER TABLE `b_mail_spam_weight` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NULL DEFAULT NULL;
+ALTER TABLE `b_landing` CHANGE `DATE_MODIFY` `DATE_MODIFY` timestamp NOT NULL;
+ALTER TABLE `b_landing_block` CHANGE `DATE_MODIFY` `DATE_MODIFY` timestamp NOT NULL;
+ALTER TABLE `b_landing_site` CHANGE `DATE_MODIFY` `DATE_MODIFY` timestamp NOT NULL;
+ALTER TABLE `b_landing_domain` CHANGE `DATE_MODIFY` `DATE_MODIFY` timestamp NOT NULL;
+ALTER TABLE `b_landing_template` CHANGE `DATE_MODIFY` `DATE_MODIFY` timestamp NOT NULL;
+ALTER TABLE `b_landing_repo` CHANGE `DATE_MODIFY` `DATE_MODIFY` timestamp NOT NULL;
+ALTER TABLE `b_landing_demo` CHANGE `DATE_MODIFY` `DATE_MODIFY` timestamp NOT NULL;
+ALTER TABLE `b_landing_placement` CHANGE `DATE_MODIFY` `DATE_MODIFY` timestamp NOT NULL;
+ALTER TABLE `b_landing_update_block` CHANGE `DATE_MODIFY` `DATE_MODIFY` timestamp NOT NULL;
+ALTER TABLE `b_landing_urlrewrite` CHANGE `DATE_MODIFY` `DATE_MODIFY` timestamp NOT NULL;
+ALTER TABLE `b_landing_filter_entity` CHANGE `DATE_MODIFY` `DATE_MODIFY` timestamp NOT NULL;
+ALTER TABLE `b_landing_chat` CHANGE `DATE_MODIFY` `DATE_MODIFY` timestamp NOT NULL;
+ALTER TABLE `b_landing_cookies_agreement` CHANGE `DATE_MODIFY` `DATE_MODIFY` timestamp NOT NULL;
+ALTER TABLE `b_landing_designer_repo` CHANGE `DATE_MODIFY` `DATE_MODIFY` timestamp NOT NULL;
+ALTER TABLE `b_perf_cluster` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NULL DEFAULT NULL;
+ALTER TABLE `b_perf_history` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NULL DEFAULT NULL;
+ALTER TABLE `b_sec_session` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+ALTER TABLE `b_event_message` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NULL DEFAULT NULL;
+ALTER TABLE `b_group` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NULL DEFAULT NULL;
+ALTER TABLE `b_user` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NULL DEFAULT NULL;
+ALTER TABLE `b_user_field_confirm` CHANGE `DATE_CHANGE` `DATE_CHANGE` timestamp NULL DEFAULT NULL;
+ALTER TABLE `b_module` CHANGE `DATE_ACTIVE` `DATE_ACTIVE` timestamp NULL DEFAULT NULL;
+ALTER TABLE `b_module_to_module` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NULL DEFAULT NULL;
+ALTER TABLE `b_file` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NULL DEFAULT NULL;
+ALTER TABLE `b_event_log` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NULL DEFAULT NULL;
+ALTER TABLE `b_user_hit_auth` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NULL DEFAULT NULL;
+ALTER TABLE `b_user_session` CHANGE `TIMESTAMP_X` `TIMESTAMP_X` timestamp NOT NULL;
+Ошибка! Структура базы данных имеет ошибки. Всего 57, автоматически могут быть исправлены: 57. Исправить
