@@ -21,7 +21,7 @@ $asset = Asset::getInstance();
     <?php
     $asset->addCss(DEFAULT_TEMPLATE_PATH . "assets/images/logo/favourite_icon.png");
     //fraimwork - css include
-    $asset->addCss(DEFAULT_TEMPLATE_PATH . "/assets/css/bootstrap.min.css");
+    $asset->addCss(DEFAULT_TEMPLATE_PATH . "/assets/plagin/bootstrap-5/css/bootstrap.min.css");
     //icon - css include
     $asset->addCss(DEFAULT_TEMPLATE_PATH . "/assets/css/fontawesome.css");
     //animation - css include
@@ -103,7 +103,13 @@ $asset = Asset::getInstance();
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-6 order-last">
                     <?php if ($USER->IsAuthorized()){ ?>
-                        <a class="custom_btn bg_default_red float-right" href="/login/"><?=$USER->GetFullName();?></a>
+                        <a class="custom_btn bg_default_red float-right"
+                           data-bs-toggle="offcanvas"
+                           href="#offcanvasExample"
+                           role="button" aria-controls="offcanvasExample"
+                        >
+                            <?=$USER->GetFullName();?>
+                        </a>
                     <?php }else {?>
                         <a class="custom_btn bg_default_red float-right" href="/login/">Вход</a>
                     <?php } ?>
@@ -280,3 +286,28 @@ $asset = Asset::getInstance();
     <!-- breadcrumb_section - end
     ================================================== -->
 
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel display-5">Меню</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:menu",
+                "social_left_menu",
+                Array(
+                    "ALLOW_MULTI_SELECT" => "N",
+                    "CHILD_MENU_TYPE" => "left",
+                    "DELAY" => "N",
+                    "MAX_LEVEL" => "1",
+                    "MENU_CACHE_GET_VARS" => array(0=>"",),
+                    "MENU_CACHE_TIME" => "3600",
+                    "MENU_CACHE_TYPE" => "N",
+                    "MENU_CACHE_USE_GROUPS" => "Y",
+                    "ROOT_MENU_TYPE" => "left",
+                    "USE_EXT" => "N"
+                )
+            );?>
+        </div>
+    </div>

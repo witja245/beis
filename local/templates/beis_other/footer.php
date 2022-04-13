@@ -34,7 +34,7 @@
 <!-- fraimwork - jquery include -->
 <script src="<?=DEFAULT_TEMPLATE_PATH?>/assets/js/jquery-3.5.1.min.js"></script>
 <script src="<?=DEFAULT_TEMPLATE_PATH?>/assets/js/popper.min.js"></script>
-<script src="<?=DEFAULT_TEMPLATE_PATH?>/assets/js/bootstrap.min.js"></script>
+<script src="<?=DEFAULT_TEMPLATE_PATH?>/assets/plagin/bootstrap-5/js/bootstrap.min.js"></script>
 
 <!-- animation - jquery include -->
 <script src="<?=DEFAULT_TEMPLATE_PATH?>/assets/js/aos.js"></script>

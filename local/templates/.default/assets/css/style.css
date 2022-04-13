@@ -4480,13 +4480,29 @@ blockquote h4 {
   padding: 13px 32px 3px 3px
 }
 /*Accordion*/
-.card-header{
-  background-color: #fff;
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
 }
-.card-header h5 a{
+.accordion-item h2 a{
   color: #000;
 }
-.card-header h5 a:hover{
+.accordion-item h2 a:hover{
   color: #000;
   text-decoration: none;
+}
+.list-group-item {
+  border: none;
+}
+.list-group-item a{
+  color: #000;
+}
+.list-group-item a:hover{
+  color: #EA001E;
+}
+.list-group-item a .selected{
+  color: #EA001E;
+}
+.offcanvas-start{
+  width: 250px;
 }

@@ -1,28 +1,19 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("test");
-?><?$APPLICATION->IncludeComponent(
-	"bitrix:socialnetwork.user_menu",
-	"",
-	Array(
-		"ID" => $id,
-		"PAGE_VAR" => "",
-		"PATH_TO_MESSAGES_INPUT" => "",
-		"PATH_TO_MESSAGE_FORM" => "",
-		"PATH_TO_SEARCH" => "",
-		"PATH_TO_USER" => "",
-		"PATH_TO_USER_BLOG" => "",
-		"PATH_TO_USER_CALENDAR" => "",
-		"PATH_TO_USER_EDIT" => "",
-		"PATH_TO_USER_FILES" => "",
-		"PATH_TO_USER_FORUM" => "",
-		"PATH_TO_USER_FRIENDS" => "",
-		"PATH_TO_USER_FRIENDS_ADD" => "",
-		"PATH_TO_USER_FRIENDS_DELETE" => "",
-		"PATH_TO_USER_GROUPS" => "",
-		"PATH_TO_USER_GROUPS_ADD" => "",
-		"PATH_TO_USER_PHOTO" => "",
-		"PATH_TO_USER_TASKS" => "",
-		"USER_VAR" => ""
-	)
+?><?$APPLICATION->IncludeComponent("bitrix:menu", "social_left_menu", Array(
+	"ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+		"CHILD_MENU_TYPE" => "left",	// Тип меню для остальных уровней
+		"DELAY" => "N",	// Откладывать выполнение шаблона меню
+		"MAX_LEVEL" => "1",	// Уровень вложенности меню
+		"MENU_CACHE_GET_VARS" => array(	// Значимые переменные запроса
+			0 => "",
+		),
+		"MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+		"MENU_CACHE_TYPE" => "N",	// Тип кеширования
+		"MENU_CACHE_USE_GROUPS" => "Y",	// Учитывать права доступа
+		"ROOT_MENU_TYPE" => "left",	// Тип меню для первого уровня
+		"USE_EXT" => "N",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+	),
+	false
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

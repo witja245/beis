@@ -11,9 +11,9 @@ $age = '';
 if (!empty($apUser['PERSONAL_BIRTHDAY'])) {
     $age = '(' . getAge($apUser['PERSONAL_BIRTHDAY']) . ')';
 }
-
+$name = $apUser['LAST_NAME'] . ' ' . $apUser['NAME'] . ' ' . $apUser['SECOND_NAME'];
 //printr($apUser);
-$APPLICATION->SetTitle(""); ?>
+$APPLICATION->SetTitle($name); ?>
 <div class="car_section sec_ptb_100 clearfix">
     <div class="container">
         <div class="row justify-content-lg-between justify-content-md-center justify-content-sm-center">
@@ -49,83 +49,75 @@ $APPLICATION->SetTitle(""); ?>
             </div>
             <hr/>
             <div style="width: 100%">
-
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                                <a class="btn btn-link" type="button" data-toggle="collapse"
-                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <b>Биография</b>
-                                </a>
-                            </h5>
-                        </div>
-
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                             data-parent="#accordionExample">
-                            <div class="card-body">
-                               <?php echo htmlspecialchars_decode($apUser['UF_BIOGRAPHY']); ?>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <a class="accordion-button" type="button" data-bs-toggle="collapse"
+                               data-bs-target="#panelsStayOpen-collapseOne"
+                               aria-expanded="true"
+                               aria-controls="panelsStayOpen-collapseOne"
+                            >
+                                Биография
+                            </a>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                             aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <?php echo htmlspecialchars_decode($apUser['UF_BIOGRAPHY']); ?>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                                <a class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                        data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                    <b>Научная деятельность</b>
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                             data-parent="#accordionExample">
-                            <div class="card-body">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                               data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                               aria-controls="panelsStayOpen-collapseTwo">
+                                Научная деятельность
+                            </a>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                             aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
                                 <?php echo htmlspecialchars_decode($apUser['UF_SCIENTIFIC_ACTIVITY']); ?>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <a class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                    <b>Педагогическая деятельность</b>
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                             data-parent="#accordionExample">
-                            <div class="card-body">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                               data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                               aria-controls="panelsStayOpen-collapseThree">
+                                Педагогическая деятельность
+                            </a>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                             aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
                                 <?php echo htmlspecialchars_decode($apUser['UF_PEDAGOGICAL_ACTIVITY']); ?>
                             </div>
                         </div>
                     </div>
-
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingFourth ">
-                        <h5 class="mb-0">
-                            <a class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false"
-                                    aria-controls="collapseThree">
-                                <b>Награды и премии</b>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                               data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                               aria-controls="panelsStayOpen-collapseThree">
+                                Награды и премии
                             </a>
-                        </h5>
-                    </div>
-                    <div id="collapseFourth" class="collapse" aria-labelledby="headingFourth"
-                         data-parent="#accordionExample">
-                        <div class="card-body">
-                            <?php echo htmlspecialchars_decode($apUser['UF_AWARDS_PRIZES']); ?>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                             aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                <?php echo htmlspecialchars_decode($apUser['UF_AWARDS_PRIZES']); ?>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                </div>
-
             </div>
+
         </div>
     </div>
+</div>
 </div>
 
 
